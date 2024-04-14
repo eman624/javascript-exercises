@@ -1,8 +1,12 @@
 const fibonacci = function (n) {
-  if (n < 2) {
-    return n;
+  const num = Number(n);
+  if (num < 0) {
+    return "OOPS";
+  }
+  if (num < 2) {
+    return num;
   } else {
-    return fibonacci(n - 1) + fibonacci(n - 2);
+    return fibonacci(num - 1) + fibonacci(num - 2);
   }
 };
 
